@@ -1,0 +1,8 @@
+Revert Pushed Changes:
+git log 
+=>[GIVE THE LIST OF COMMITED LIST {REMEMBER COMMIT MESSAGE} COPY ITS ID]
+example git log: commit 40a457c3d91b531a00c167b356a5b8eefdc86001 (HEAD -> feat/Dev/UndoLastCommit_Git, origin/feat/Dev/UndoLastCommit_Git)it_Git)
+
+
+git revert 40a457c3d91b531a00c167b356a5b8eefdc86001
+=>[REVERT THE COMMITED CHANGED YOU NEED TO COMMIT AND PUSH TO REMOVE THE COMMITED CHANGES]
