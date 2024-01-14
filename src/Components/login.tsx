@@ -8,7 +8,7 @@ interface ILoginProps {}
 const Login: React.FunctionComponent<ILoginProps> = () => {
   const loadIntialValues = async () => {
     try {
-      let { data } = await axiosInstance.get(`https://dummyjson.com/produc`);
+      let { data } = await axiosInstance.get(`https://dummyjson.com/products`);
       console.log(data);
     } catch (err) {
       console.log(err);
