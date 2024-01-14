@@ -1,0 +1,24 @@
+=>Import Component using const on TOP using lazy(() => import())
+example:
+        import { Suspense, lazy } from "react";
+        import { Paper } from "@mui/material";
+
+        const Home = lazy(() => import("./home"));
+        const LazyLoading: React.FunctionComponent<ILazyLoadingProps> = () => {
+            return(<></>)
+        }
+
+        export default LazyLoading
+
+=>Next use the Imported compo in CURRENT USING COMPO using Suspense and attribute fallback
+example:
+        return (
+            <Paper>
+            <h1>LazyLoading</h1>
+            <Suspense
+                fallback={<div>Please Wait for 10000 count in console ..!!!!!!</div>}
+            >
+                <Home />
+            </Suspense>
+            </Paper>
+        );
