@@ -1,7 +1,8 @@
 import React from "react";
 import axiosInstance from "../axios";
-import { Button, TextField } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import Typo from "../MuiComponents/typo";
 
 interface ILoginProps {}
 
@@ -30,6 +31,7 @@ const Login: React.FunctionComponent<ILoginProps> = () => {
         gap: "10px",
       }}
     >
+      <Typo size="x-large" data={'true'} />
       <Box
         sx={{
           display: "flex",
@@ -37,7 +39,7 @@ const Login: React.FunctionComponent<ILoginProps> = () => {
           gap: "10px",
         }}
       >
-        Enter Name or Email :{" "}
+        <Typography>Enter Name or Email : </Typography>
         <TextField
           id="outlined-basic"
           label="Name / Email"
@@ -51,7 +53,7 @@ const Login: React.FunctionComponent<ILoginProps> = () => {
           gap: "10px",
         }}
       >
-        Password :{" "}
+        <Typography>Password : </Typography>
         <TextField id="outlined-basic" label="Password" variant="outlined" />
       </Box>
 
